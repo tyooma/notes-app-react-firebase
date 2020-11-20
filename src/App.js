@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 
 import { Navbar } from './components/Navbar'
 import { Alert } from './components/Alert'
@@ -13,7 +13,7 @@ function App() {
   return (
     <FirebaseState>
       <AlertState>
-        <BrowserRouter>
+        <HashRouter>
           <Navbar />
           <div className="container pt-4">
             <Alert />
@@ -22,7 +22,7 @@ function App() {
               <Route path='/about' exact component={About} />
             </Switch>
           </div>
-        </BrowserRouter>
+        </HashRouter>
       </AlertState>
     </FirebaseState>
   )

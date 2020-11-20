@@ -1,13 +1,13 @@
-[debug] [2020-11-20T20:46:59.807Z] ----------------------------------------------------------------------
-[debug] [2020-11-20T20:46:59.809Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Tyooma\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2020-11-20T20:46:59.809Z] CLI Version:   8.16.2
-[debug] [2020-11-20T20:46:59.809Z] Platform:      win32
-[debug] [2020-11-20T20:46:59.809Z] Node Version:  v10.22.1
-[debug] [2020-11-20T20:46:59.810Z] Time:          Fri Nov 20 2020 22:46:59 GMT+0200 (GMT+02:00)
-[debug] [2020-11-20T20:46:59.810Z] ----------------------------------------------------------------------
-[debug] [2020-11-20T20:46:59.810Z] 
-[debug] [2020-11-20T20:46:59.815Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-11-20T20:46:59.815Z] > authorizing via signed-in user
+[debug] [2020-11-20T21:05:42.936Z] ----------------------------------------------------------------------
+[debug] [2020-11-20T21:05:42.938Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Tyooma\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting:github
+[debug] [2020-11-20T21:05:42.938Z] CLI Version:   8.16.2
+[debug] [2020-11-20T21:05:42.938Z] Platform:      win32
+[debug] [2020-11-20T21:05:42.938Z] Node Version:  v10.22.1
+[debug] [2020-11-20T21:05:42.939Z] Time:          Fri Nov 20 2020 23:05:42 GMT+0200 (GMT+02:00)
+[debug] [2020-11-20T21:05:42.939Z] ----------------------------------------------------------------------
+[debug] [2020-11-20T21:05:42.939Z] 
+[debug] [2020-11-20T21:05:42.944Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-20T21:05:42.945Z] > authorizing via signed-in user
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -22,6 +22,7 @@ You're about to initialize a Firebase project in this directory:
 Before we get started, keep in mind:
 
   * You are currently outside your home directory
+  * You are initializing in an existing Firebase project directory
 
 [info] 
 === Project Setup
@@ -30,195 +31,30 @@ Before we get started, keep in mind:
 [info] You can create multiple project aliases by running firebase use --add, 
 [info] but for now we'll just set up a default project.
 [info] 
-[debug] [2020-11-20T20:48:21.162Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2020-11-20T20:48:21.163Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2020-11-20T20:48:21.420Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Fri, 20 Nov 2020 20:48:21 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2020-11-20T20:48:21.426Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+[info] i  .firebaserc already has a default project, using tyooma-notes-extended. 
+[debug] [2020-11-20T21:05:45.685Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/tyooma-notes-extended  
  
-[debug] [2020-11-20T20:48:21.881Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 20 Nov 2020 20:48:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] i  Using project tyooma-notes-extended (tyooma-notes-extended) 
+[debug] [2020-11-20T21:05:46.049Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 20 Nov 2020 21:05:46 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
 [info] 
-=== Hosting Setup
+=== Hosting:github Setup
 [info] 
-[info] Your public directory is the folder (relative to your project directory) that
-[info] will contain Hosting assets to be uploaded with firebase deploy. If you
-[info] have a build process for your assets, use your build's output directory.
-[info] 
-[debug] [2020-11-20T20:49:17.012Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
- 
-[debug] [2020-11-20T20:49:17.238Z] <<< HTTP RESPONSE 200 {"accept-ranges":"bytes","vary":"Accept-Encoding, Origin","content-type":"application/json","cross-origin-resource-policy":"cross-origin","content-length":"1411","date":"Fri, 20 Nov 2020 20:36:25 GMT","expires":"Fri, 20 Nov 2020 21:26:25 GMT","last-modified":"Fri, 20 Nov 2020 01:53:31 GMT","x-content-type-options":"nosniff","server":"sffe","x-xss-protection":"0","cache-control":"public, max-age=3000","age":"772","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""}
-[info] i  Skipping write of build/index.html 
-[info] 
-[info] i  Didn't detect a .git folder. Assuming C:\projects\react-notes-extended is the project root. 
+[info] i  Detected a .git folder at C:\projects\react-notes-extended 
 [info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
 [info] 
 [info] Visit this URL on this device to log in:
-[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=23651089&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=447255647&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
 [info] 
 [info] Waiting for authentication...
-[debug] [2020-11-20T20:49:27.952Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
- {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"d275d4c72ef27bbd1cc0","redirect_uri":"http://localhost:9005","state":"23651089"}
-[debug] [2020-11-20T20:49:28.505Z] <<< HTTP RESPONSE 200 {"date":"Fri, 20 Nov 2020 20:49:28 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","server":"GitHub.com","status":"200 OK","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"W/\"bbf3c8ffa668dcdf586189621a6a475f\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker.js gist.github.com/socket-worker.js","x-github-request-id":"D96E:137AA:D6DC1F:1232CCC:5FB82BD8"}
-[debug] [2020-11-20T20:49:28.505Z] >>> HTTP REQUEST GET https://api.github.com/user  
+[debug] [2020-11-20T21:05:46.579Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"8e8b2fdd58d6b72601b0","redirect_uri":"http://localhost:9005","state":"447255647"}
+[debug] [2020-11-20T21:05:46.971Z] <<< HTTP RESPONSE 200 {"date":"Fri, 20 Nov 2020 21:05:47 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","server":"GitHub.com","status":"200 OK","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"W/\"41397e8aca9624dce5e19a709ce1e32a\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker.js gist.github.com/socket-worker.js","x-github-request-id":"DA7F:E640:D8F2DE:12587E7:5FB82FAB"}
+[debug] [2020-11-20T21:05:46.972Z] >>> HTTP REQUEST GET https://api.github.com/user  
  
-[debug] [2020-11-20T20:49:29.051Z] <<< HTTP RESPONSE 200 {"date":"Fri, 20 Nov 2020 20:49:29 GMT","content-type":"application/json; charset=utf-8","content-length":"1362","server":"GitHub.com","status":"200 OK","cache-control":"private, max-age=60, s-maxage=60","vary":"Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"\"2c6adad9c6b8fd98d2f92bbf1c2a88de130f876c1632a45d49508f0935e2740f\"","last-modified":"Fri, 20 Nov 2020 20:49:27 GMT","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4999","x-ratelimit-reset":"1605908969","x-ratelimit-used":"1","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","x-github-request-id":"D970:1D1E:51DD5C:5F4A66:5FB82BD9"}
+[debug] [2020-11-20T21:05:47.388Z] <<< HTTP RESPONSE 200 {"date":"Fri, 20 Nov 2020 21:05:47 GMT","content-type":"application/json; charset=utf-8","content-length":"1362","server":"GitHub.com","status":"200 OK","cache-control":"private, max-age=60, s-maxage=60","vary":"Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"\"08b0d4a418a55e49b7e679079523a73877ddd765995d07b8151ef3a6e34845b6\"","last-modified":"Fri, 20 Nov 2020 20:54:08 GMT","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4978","x-ratelimit-reset":"1605908969","x-ratelimit-used":"22","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","x-github-request-id":"DA83:128F0:AFF1B3:CBE91B:5FB82FAB"}
 [info] 
 [info] +  Success! Logged into GitHub as tyooma 
 [info] 
-[debug] [2020-11-20T20:51:17.068Z] >>> HTTP REQUEST GET https://api.github.com/repos/https://github.com/tyooma/notes-app-react-firebase.git/actions/secrets/public-key?type=owner  
+[debug] [2020-11-20T21:05:56.609Z] >>> HTTP REQUEST GET https://api.github.com/repos/https://github.com/tyooma/notes-app-react-firebase/actions/secrets/public-key?type=owner  
  
-[debug] [2020-11-20T20:51:17.454Z] <<< HTTP RESPONSE 404 {"date":"Fri, 20 Nov 2020 20:51:17 GMT","content-type":"application/json; charset=utf-8","content-length":"74","server":"GitHub.com","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4998","x-ratelimit-reset":"1605908969","x-ratelimit-used":"2","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"D983:128F1:139A537:16BFDFF:5FB82C45"}
-[debug] [2020-11-20T20:51:17.454Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
-[debug] [2020-11-20T20:51:28.192Z] >>> HTTP REQUEST GET https://api.github.com/repos/https://github.com/tyooma/notes-app-react-firebase.git/actions/secrets/public-key?type=owner  
- 
-[debug] [2020-11-20T20:51:28.557Z] <<< HTTP RESPONSE 404 {"date":"Fri, 20 Nov 2020 20:51:28 GMT","content-type":"application/json; charset=utf-8","content-length":"74","server":"GitHub.com","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4997","x-ratelimit-reset":"1605908969","x-ratelimit-used":"3","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"D984:D979:2AE708:319A35:5FB82C50"}
-[debug] [2020-11-20T20:51:28.557Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
-[debug] [2020-11-20T20:51:47.963Z] ----------------------------------------------------------------------
-[debug] [2020-11-20T20:51:47.964Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Tyooma\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2020-11-20T20:51:47.965Z] CLI Version:   8.16.2
-[debug] [2020-11-20T20:51:47.965Z] Platform:      win32
-[debug] [2020-11-20T20:51:47.965Z] Node Version:  v10.22.1
-[debug] [2020-11-20T20:51:47.966Z] Time:          Fri Nov 20 2020 22:51:47 GMT+0200 (GMT+02:00)
-[debug] [2020-11-20T20:51:47.966Z] ----------------------------------------------------------------------
-[debug] [2020-11-20T20:51:47.966Z] 
-[debug] [2020-11-20T20:51:47.970Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-11-20T20:51:47.971Z] > authorizing via signed-in user
-[info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
-
-You're about to initialize a Firebase project in this directory:
-
-  C:\projects\react-notes-extended
-
-Before we get started, keep in mind:
-
-  * You are currently outside your home directory
-
-[info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[debug] [2020-11-20T20:51:56.373Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
- 
-[debug] [2020-11-20T20:51:56.880Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 20 Nov 2020 20:51:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] i  Using project tyooma-notes-extended (tyooma-notes-extended) 
-[info] 
-=== Hosting Setup
-[info] 
-[info] Your public directory is the folder (relative to your project directory) that
-[info] will contain Hosting assets to be uploaded with firebase deploy. If you
-[info] have a build process for your assets, use your build's output directory.
-[info] 
-[debug] [2020-11-20T20:52:11.527Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
- 
-[debug] [2020-11-20T20:52:11.715Z] <<< HTTP RESPONSE 200 {"accept-ranges":"bytes","vary":"Accept-Encoding, Origin","content-type":"application/json","cross-origin-resource-policy":"cross-origin","content-length":"1411","date":"Fri, 20 Nov 2020 20:36:25 GMT","expires":"Fri, 20 Nov 2020 21:26:25 GMT","last-modified":"Fri, 20 Nov 2020 01:53:31 GMT","x-content-type-options":"nosniff","server":"sffe","x-xss-protection":"0","cache-control":"public, max-age=3000","age":"946","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""}
-[info] i  Skipping write of build/index.html 
-[info] 
-[info] i  Didn't detect a .git folder. Assuming C:\projects\react-notes-extended is the project root. 
-[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
-[info] 
-[info] Visit this URL on this device to log in:
-[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=730459034&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
-[info] 
-[info] Waiting for authentication...
-[debug] [2020-11-20T20:52:14.866Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
- {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"36f8cdbc2cccfa7e39ce","redirect_uri":"http://localhost:9005","state":"730459034"}
-[debug] [2020-11-20T20:52:15.294Z] <<< HTTP RESPONSE 200 {"date":"Fri, 20 Nov 2020 20:52:15 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","server":"GitHub.com","status":"200 OK","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"W/\"c3888dce74f982c04faca5c30708b0f5\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker.js gist.github.com/socket-worker.js","x-github-request-id":"D98C:3E78:B217A3:F16C38:5FB82C7F"}
-[debug] [2020-11-20T20:52:15.294Z] >>> HTTP REQUEST GET https://api.github.com/user  
- 
-[debug] [2020-11-20T20:52:15.749Z] <<< HTTP RESPONSE 200 {"date":"Fri, 20 Nov 2020 20:52:16 GMT","content-type":"application/json; charset=utf-8","content-length":"1362","server":"GitHub.com","status":"200 OK","cache-control":"private, max-age=60, s-maxage=60","vary":"Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"\"48d8408fd649e38cb83b55ee32a10b65d710e56287ddeea047aa115c6e2722ae\"","last-modified":"Fri, 20 Nov 2020 20:51:11 GMT","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4996","x-ratelimit-reset":"1605908969","x-ratelimit-used":"4","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","x-github-request-id":"D990:7DE6:4E8164:5B3A64:5FB82C80"}
-[info] 
-[info] +  Success! Logged into GitHub as tyooma 
-[info] 
-[debug] [2020-11-20T20:52:24.413Z] >>> HTTP REQUEST GET https://api.github.com/repos/https://github.com/tyooma/notes-app-react-firebase.git/actions/secrets/public-key?type=owner  
- 
-[debug] [2020-11-20T20:52:24.767Z] <<< HTTP RESPONSE 404 {"date":"Fri, 20 Nov 2020 20:52:24 GMT","content-type":"application/json; charset=utf-8","content-length":"74","server":"GitHub.com","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4995","x-ratelimit-reset":"1605908969","x-ratelimit-used":"5","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"D999:13679:1381A08:1694E0F:5FB82C88"}
-[debug] [2020-11-20T20:52:24.767Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
-[debug] [2020-11-20T20:52:39.307Z] >>> HTTP REQUEST GET https://api.github.com/repos/notes-app-react-firebase/actions/secrets/public-key?type=owner  
- 
-[debug] [2020-11-20T20:52:39.681Z] <<< HTTP RESPONSE 404 {"date":"Fri, 20 Nov 2020 20:52:40 GMT","content-type":"application/json; charset=utf-8","content-length":"74","server":"GitHub.com","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4994","x-ratelimit-reset":"1605908969","x-ratelimit-used":"6","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"D99C:EF37:A59390:C04E4F:5FB82C98"}
-[debug] [2020-11-20T20:52:39.681Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
-[debug] [2020-11-20T20:52:49.612Z] >>> HTTP REQUEST GET https://api.github.com/repos/git@github.com:tyooma/notes-app-react-firebase.git/actions/secrets/public-key?type=owner  
- 
-[debug] [2020-11-20T20:52:49.959Z] <<< HTTP RESPONSE 404 {"date":"Fri, 20 Nov 2020 20:52:50 GMT","content-type":"application/json; charset=utf-8","content-length":"120","server":"GitHub.com","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4993","x-ratelimit-reset":"1605908969","x-ratelimit-used":"7","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"D99D:E52D:503979:5D1CCF:5FB82CA2"}
-[debug] [2020-11-20T20:52:49.959Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
-[debug] [2020-11-20T20:53:34.287Z] ----------------------------------------------------------------------
-[debug] [2020-11-20T20:53:34.288Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Tyooma\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2020-11-20T20:53:34.289Z] CLI Version:   8.16.2
-[debug] [2020-11-20T20:53:34.289Z] Platform:      win32
-[debug] [2020-11-20T20:53:34.289Z] Node Version:  v10.22.1
-[debug] [2020-11-20T20:53:34.290Z] Time:          Fri Nov 20 2020 22:53:34 GMT+0200 (GMT+02:00)
-[debug] [2020-11-20T20:53:34.290Z] ----------------------------------------------------------------------
-[debug] [2020-11-20T20:53:34.290Z] 
-[debug] [2020-11-20T20:53:34.294Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-11-20T20:53:34.294Z] > authorizing via signed-in user
-[info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
-
-You're about to initialize a Firebase project in this directory:
-
-  C:\projects\react-notes-extended
-
-Before we get started, keep in mind:
-
-  * You are currently outside your home directory
-
-[info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[debug] [2020-11-20T20:53:39.335Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
- 
-[debug] [2020-11-20T20:53:39.818Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 20 Nov 2020 20:53:40 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] i  Using project tyooma-notes-extended (tyooma-notes-extended) 
-[info] 
-=== Hosting Setup
-[info] 
-[info] Your public directory is the folder (relative to your project directory) that
-[info] will contain Hosting assets to be uploaded with firebase deploy. If you
-[info] have a build process for your assets, use your build's output directory.
-[info] 
-[debug] [2020-11-20T20:53:49.029Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
- 
-[debug] [2020-11-20T20:53:49.219Z] <<< HTTP RESPONSE 200 {"accept-ranges":"bytes","vary":"Accept-Encoding, Origin","content-type":"application/json","cross-origin-resource-policy":"cross-origin","content-length":"1411","date":"Fri, 20 Nov 2020 20:36:25 GMT","expires":"Fri, 20 Nov 2020 21:26:25 GMT","last-modified":"Fri, 20 Nov 2020 01:53:31 GMT","x-content-type-options":"nosniff","server":"sffe","x-xss-protection":"0","cache-control":"public, max-age=3000","age":"1044","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""}
-[info] i  Skipping write of build/index.html 
-[info] 
-[info] i  Didn't detect a .git folder. Assuming C:\projects\react-notes-extended is the project root. 
-[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
-[info] 
-[info] Visit this URL on this device to log in:
-[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=1046278609&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
-[info] 
-[info] Waiting for authentication...
-[debug] [2020-11-20T20:53:53.542Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
- {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"9c82873bf6f7a949f4eb","redirect_uri":"http://localhost:9005","state":"1046278609"}
-[debug] [2020-11-20T20:53:54.037Z] <<< HTTP RESPONSE 200 {"date":"Fri, 20 Nov 2020 20:53:54 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","server":"GitHub.com","status":"200 OK","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"W/\"03b39c2130d4ed73647e608cc4b5bdaf\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker.js gist.github.com/socket-worker.js","x-github-request-id":"D9B5:A171:38068B:4B9243:5FB82CE2"}
-[debug] [2020-11-20T20:53:54.037Z] >>> HTTP REQUEST GET https://api.github.com/user  
- 
-[debug] [2020-11-20T20:53:54.516Z] <<< HTTP RESPONSE 200 {"date":"Fri, 20 Nov 2020 20:53:55 GMT","content-type":"application/json; charset=utf-8","content-length":"1362","server":"GitHub.com","status":"200 OK","cache-control":"private, max-age=60, s-maxage=60","vary":"Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"\"09969087c71c6facb9a837f196ab9727b15252928feb04392cc490152fa84444\"","last-modified":"Fri, 20 Nov 2020 20:52:44 GMT","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4992","x-ratelimit-reset":"1605908969","x-ratelimit-used":"8","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","x-github-request-id":"D9B9:A065:556226:62CE00:5FB82CE2"}
-[info] 
-[info] +  Success! Logged into GitHub as tyooma 
-[info] 
-[debug] [2020-11-20T20:54:00.708Z] >>> HTTP REQUEST GET https://api.github.com/repos/git@github.com:tyooma/notes-app-react-firebase.git/actions/secrets/public-key?type=owner  
- 
-[debug] [2020-11-20T20:54:01.079Z] <<< HTTP RESPONSE 404 {"date":"Fri, 20 Nov 2020 20:54:01 GMT","content-type":"application/json; charset=utf-8","content-length":"120","server":"GitHub.com","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4991","x-ratelimit-reset":"1605908969","x-ratelimit-used":"9","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"D9BF:1D20:123E0F6:1529DA4:5FB82CE9"}
-[debug] [2020-11-20T20:54:01.079Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
-[debug] [2020-11-20T20:54:14.669Z] >>> HTTP REQUEST GET https://api.github.com/repos/https://github.com/tyooma/notes-app-react-firebase.git/actions/secrets/public-key?type=owner  
- 
-[debug] [2020-11-20T20:54:15.014Z] <<< HTTP RESPONSE 404 {"date":"Fri, 20 Nov 2020 20:54:15 GMT","content-type":"application/json; charset=utf-8","content-length":"74","server":"GitHub.com","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4990","x-ratelimit-reset":"1605908969","x-ratelimit-used":"10","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"D9C8:A067:1255D52:1550546:5FB82CF7"}
-[debug] [2020-11-20T20:54:15.014Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2020-11-20T21:05:56.959Z] <<< HTTP RESPONSE 404 {"date":"Fri, 20 Nov 2020 21:05:57 GMT","content-type":"application/json; charset=utf-8","content-length":"74","server":"GitHub.com","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4977","x-ratelimit-reset":"1605908969","x-ratelimit-used":"23","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"DA8B:E5C8:543053:61034B:5FB82FB5"}
+[debug] [2020-11-20T21:05:56.959Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
