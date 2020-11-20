@@ -1,5 +1,5 @@
 # DEMO
-[DEMO](https://tyooma.github.io/notes-app-react-firebase#/)
+[DEMO](https://tyooma.github.io/notes-app-react-firebase/)
 
 # INSTALL & RUN
 yarn install
