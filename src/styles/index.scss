@@ -1,0 +1,129 @@
+@import "~bootstrap/scss/bootstrap";
+@import "vars";
+
+/* STYLES */
+.background-animate {
+  animation: navbar 60s ease-in-out infinite;
+}
+
+.alert-enter {
+  opacity: 0;
+}
+
+.alert-enter-active {
+  transition: opacity 500ms ease-out;
+  opacity: 1;
+}
+
+.alert-exit-active {
+  transition: opacity 350ms ease-out;
+  opacity: 0;
+}
+
+.note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-text {
+  width: 85%;
+
+  font-size: 25px;
+  font-weight: 400;
+  
+  color: $white;
+}
+
+.note-enter-active {
+  animation: note 600ms ease-in alternate-reverse;
+}
+
+.note-exit-active {
+  animation: note 300ms ease-out forwards;
+}
+
+.ico {
+  margin-left: 10px;
+
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+
+    cursor: pointer;
+  }
+}
+
+.ico-container {
+  width: 10%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer {
+  padding: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ANIMATIONS */
+@keyframes note {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    opacity: .7;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}
+
+@keyframes navbar {
+  0% {
+    background-color: $blue;
+  }
+  10% {
+    background-color: $indigo;
+  }
+  20% {
+    background-color: $purple;
+  }
+  25% {
+    background-color: $pink;
+  }
+  30% {
+    background-color: $red;
+  }
+  40% {
+    background-color: $orange;
+  }
+  50% {
+    background-color: $yellow;
+  }
+  60% {
+    background-color: $green;
+  }
+  70% {
+    background-color: $teal;
+  }
+  80% {
+    background-color: $cyan;
+  }
+  85% {
+    background-color: $gray;
+  }
+  90% {
+    background-color: $dark;
+  }
+  100% {
+    background-color: $blue;
+  }
+}

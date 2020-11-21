@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import { Navbar } from './components/Navbar'
 import { Alert } from './components/Alert'
+import { Footer } from './components/Footer'
 
 import { Home } from './pages/Home'
 import { About } from './pages/About'
@@ -22,6 +23,7 @@ function App() {
               <Route path='/about' exact component={About} />
             </Switch>
           </div>
+          <Footer />
         </BrowserRouter>
       </AlertState>
     </FirebaseState>
