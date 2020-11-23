@@ -7,7 +7,15 @@ import { Notes } from '../components/Notes'
 import { FirebaseContext } from '../context/firebase/firebaseContext'
 
 export const Home = () => {
-  const { loading, notes, fetchNotes, removeNote } = useContext(FirebaseContext)
+  const {
+    loading,
+    notes,
+    fetchNotes,
+    removeNote,
+    startEditNote,
+    processEditNote,
+    finishEditNote
+  } = useContext(FirebaseContext)
 
   useEffect(() => {
     fetchNotes()
@@ -26,7 +34,15 @@ export const Home = () => {
         : ( 
           notes.length === 0
           ? <h3 className="text-center">There are no notes yet</h3>
-          : <Notes notes={notes} onRemove={removeNote} />
+          : (
+            <Notes
+              notes={notes}
+              onRemove={removeNote}
+              onEditStart={startEditNote}
+              onEditProcess={processEditNote}
+              onEditFinish={finishEditNote}
+            />
+          )
         )
       }
     </>
